@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Q3
+        </title>
+    </head>
+
+    <style>
+        body{
+            background-color:seashell;
+            margin: auto;
+
+         }
+        h1{
+             color: navy;
+        }
+        /* link to Patient List */
+                    .btone{
+                        position: relative;
+                        top: 50px;
+                        display: block;
+                        padding: 11px 13px;
+                        text-align: center;
+                        text-decoration: none;
+                        color:cadetblue;
+                        background-color: lightblue;
+                        margin: auto;
+                        outline: none;
+                        cursor: pointer;
+                    }
+                    a.btone{
+                        width: 46%;
+                        line-height: 2em;
+                        margin: auto;
+                        text-align: center;
+                        text-decoration: none;
+                        border-radius: 8px;
+    
+                    }
+                    a.btone:hover{
+                        color:steelblue;
+                        background: powderblue;
+                    }
+    </style>
+
+    <body>
+        <center>
+            <!--Creates form for the patient's name.-->
+            <div id="City">
+            <p>Please enter your city.<br></p>
+            <form action="Q4.html">
+                <label for="city">City:</label><br>
+                <input type="text" id="city" name="city"><br><br>
+                <a href="Q4.html" class="btone">Submit<br></a>   
+            </form>
+            </div>
+        </center>
+    </body>
+
+    <!--The following code is an attempt to print the previously entered information.-->
+    <script type="text/javascript">
+        function printDiv(Name) {
+            var printContents = document.getElementById(Name);
+            w=window.open("");
+            w.document.write(printContents.outerHTML);
+            w.print();
+            w.close();
+        }
+    </script>
+</html>
